@@ -14,7 +14,10 @@ app.get("/", function(req,res){
 })
 
 app.get("/hello", function(req,res){
-    res.render("test2",{});
+    res.render("test2",{
+        one: "this is one",
+        two: "this is two"
+    });
 })
 
 app.post("/postTest",function(req,res){             // postTest라는 주소로 POST 요청이 들어오면 실행
